@@ -1,0 +1,11 @@
+libwandio.so.1:wandio_create
+libwandio.so.1:wandio_create_uncompressed
+libwandio.so.1:wandio_destroy
+libwandio.so.1:wandio_lookup_compression_type
+libwandio.so.1:wandio_peek
+libwandio.so.1:wandio_read
+libwandio.so.1:wandio_seek
+libwandio.so.1:wandio_tell
+libwandio.so.1:wandio_wcreate
+libwandio.so.1:wandio_wdestroy
+libwandio.so.1:wandio_wwrite

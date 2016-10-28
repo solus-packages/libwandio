@@ -1,15 +1,13 @@
 name       : libwandio
 version    : 1.0.4
-release    : 1
+release    : 2
 source     :
     - http://research.wand.net.nz/software/wandio/wandio-1.0.4.tar.gz : 0fe4ae99ad7224f11a9c988be151cbdc12c6dc15872b67f101764d6f3fc70629
 license    : LGPL-3.0
 component  : programming
-summary    : An API for reading and writing to files using a variety of compression methods. 
+summary    : An API for reading and writing to files using a variety of compression  methods.
 description: |
-        Libwandio is a software library written in C that provides an API 
-        for transparently reading from and writing to files using a 
-        variety of supported compression methods.
+    Libwandio is a software library written in C that provides an API for transparently reading from and writing to files using a variety of supported compression methods.
 builddeps  :
     - libpth
     - lzo-devel
@@ -17,10 +15,10 @@ setup      : |
     %configure \
         --disable-static \
         --with-bzip2 \
-        --with-zlib \
-        --with-lzo \
+        --with-http \
         --with-lzma \
-        --with-http
+        --with-lzo \
+        --with-zlib
 build      : |
     %make
 install    : |
