@@ -1,14 +1,16 @@
 name       : libwandio
-version    : 1.0.4
-release    : 2
+version    : 4.0.0
+release    : 3
 source     :
-    - http://research.wand.net.nz/software/wandio/wandio-1.0.4.tar.gz : 0fe4ae99ad7224f11a9c988be151cbdc12c6dc15872b67f101764d6f3fc70629
-license    : LGPL-3.0
-component  : programming
+    - https://research.wand.net.nz/software/wandio/wandio-4.0.0.tar.gz : f6d9c81c1ad0b7a99696c057fb02e5c04a9c240effd6bf587a5b02352ce86a9f
+license    : LGPL-3.0-or-later
+component  : programming.library
 summary    : An API for reading and writing to files using a variety of compression  methods.
 description: |
     Libwandio is a software library written in C that provides an API for transparently reading from and writing to files using a variety of supported compression methods.
 builddeps  :
+    - pkgconfig(libcurl)
+    - bzip2-devel
     - libpth
     - lzo-devel
 setup      : |
